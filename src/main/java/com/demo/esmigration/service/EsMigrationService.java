@@ -21,7 +21,7 @@ public class EsMigrationService {
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    public void saveConversations() {
+    public void saveIndexData() {
         URI url = UriComponentsBuilder.fromUriString("http://localhost:9200/<index-name>/<index-type>/_search").build().toUri();
         String response = restTemplate.getForObject(url, String.class);
         

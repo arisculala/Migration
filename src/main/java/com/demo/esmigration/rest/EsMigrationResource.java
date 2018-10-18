@@ -29,9 +29,9 @@ public class EsMigrationResource {
         return new ResponseEntity<String>("test hello", HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/saveConversations", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> saveConversations() {
-        esMigrationResource.saveConversations();
+    @RequestMapping(value = "/saveIndexData", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> saveIndexData() {
+        esMigrationResource.saveIndexData();
         return new ResponseEntity<HttpStatus>(HttpStatus.OK);
     }
 }
